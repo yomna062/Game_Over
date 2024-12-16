@@ -1,0 +1,138 @@
+html {
+  --main-color: rgb(58, 73, 123);
+  --active-color: #0DCAF0;
+  --main-transition: 0.5s
+}
+body {
+  font-family: "Comfortaa", sans-serif;
+  background-color: #2C3035;
+  position: relative;
+}
+.img-body{
+  background-size: cover;
+  background-position: 50% 50%;
+}
+nav {
+  width: 80%;
+  background-color: var(--main-color) !important;
+  color: aliceblue;
+  position: absolute;
+  top: 80%;
+  border-radius: 40px;
+  box-shadow: rgb(58, 73, 123) -1px 0px 17px 10px;;
+}
+.navbar-collapse {
+  flex-grow: 0 ;
+}
+nav .nav-link {
+  transition: var(--main-transition);
+  color: aliceblue;
+} 
+nav li a.nav-link:hover {
+  color: var(--active-color);
+}
+nav img {
+  width: 15%;
+}
+li.active a {
+  color: var(--active-color) ;
+  transition: var(--main-transition);
+}
+a:visited{
+  color: aliceblue ;
+}
+li.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: aliceblue;
+}
+
+li.active a:hover {
+  color: aliceblue;
+}
+.game .iner {
+  background-color: #272b30;
+  border: 2px solid #163357;
+  transition: var(--main-transition);
+}
+.game .iner:hover {
+  transform: scale(1.07);
+  background-color: #41474f;
+  cursor: pointer;
+}
+
+figure img {
+  transition: var(--main-transition);
+}
+.iner figcaption {
+  border-bottom: 2px solid #4a4d5088;
+}
+.end-div h5 {
+  font-size: 12px;
+  background-color: #18222f;
+  padding: 6px;
+  border-radius: 13px;
+}
+.iner .alert {
+  background-color: darkred;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  font-size: 50px;
+  font-weight: bold;
+}
+.gameDetails i {
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+.gameDetails i:hover {
+  color: rgb(255, 15, 15);
+}
+figure.col-12 img {
+  transition: var(--main-transition);
+}
+figure.col-12 img:hover {
+  transform: scale(1.07);
+}
+figcaption h3 {
+  margin: 15px 0px;
+}
+figcaption h3 span {
+  background-color: aqua;
+  color: #000000;
+  font-weight: bold;
+  margin: 0px 10px 0px;
+  padding: 4px;
+
+  border-radius: 10px;
+}
+a.showGame {
+  text-decoration: none;
+  color: #fff !important;
+}
+
+
+
+                /* loading screen */
+
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.spinner-border  {
+  color: var(--active-color);
+  font-size: 10rem;
+  width: 30rem;
+  height: 30rem;
+  font-weight: bold;
+}
+.btn{
+  
+  height: 40px;
+}
